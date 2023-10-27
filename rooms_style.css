@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    max-height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 1%;
+}
+
+.header{
+    font-family: imperial script;
+    color: #79443B;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    font-size: 1.5625rem;
+}
+
+.nav-home{
+    text-align: left;
+    padding-bottom: 1.2rem;
+    font-size: 1.5625rem;
+}
+
+#reserve-link{
+    background-color: #79443B;
+    margin-right: 0;
+}
+
+#reserve-link:hover{
+    background-color: black;
+}
+
+#reserve{
+    color:white;
+}
+
+.nav-home ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+}
+
+.nav-home ul {
+    margin-top: 1rem;
+}
+
+.nav-links ul {
+    margin-top: 1rem;
+}
+
+.nav-links ul li {
+    margin-right: 7rem;
+}
+
+.nav-home ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+#normal-link::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#normal-link:hover::after{
+    width: 100%;
+}
+
+/* ROOMS Content */
+
+/* Single Room Content */
+
+.rooms-single-container{
+    padding: 2% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+}
+
+.rooms-single-img{
+    width: 920px;
+    height: 586px;
+    background-image: url(images/Rooms_SingleBedRoom.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.rooms-single-content{
+    padding: 5% 0;
+    padding-left: 2%;
+    max-width: 40%;
+    max-height: 10%;
+    display: block;
+}
+
+.rooms-single-header{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.rooms-single-floor{
+    font-size: 1.25rem;
+    padding-bottom: 1%;
+}
+
+.rooms-single-desc{
+    font-size: 1.5625rem;
+    color: #757575;
+}
+
+.rooms-single-price{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 1.5625rem;
+    font-weight: bold;
+}
+
+.rooms-single-reserve{
+    text-align: center;
+    font-size: 1.625rem;
+}
+
+.rooms-single-reserve-container{
+    background-color: #AE8F82;
+    display: inline-block;
+    padding: 1% 0;
+    text-align: center;
+    width: 20%;
+    color: white;
+}
+
+.rooms-single-reserve-container:hover{
+    background-color: black;
+}
+
+/* Double Room Content */
+
+.rooms-double-container{
+    padding: 2% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+    justify-content: flex-end;
+}
+
+.rooms-double-img{
+    width: 920px;
+    height: 586px;
+    background-image: url(images/Rooms_DoubleBedRoom.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.rooms-double-content{
+    padding: 5% 0;
+    padding-right: 2%;
+    max-width: 40%;
+    max-height: 10%;
+    display: block;
+}
+
+.rooms-double-header{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.rooms-double-floor{
+    font-size: 1.25rem;
+    padding-bottom: 1%;
+}
+
+.rooms-double-desc{
+    font-size: 1.5625rem;
+    color: #757575;
+}
+
+.rooms-double-price{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 1.5625rem;
+    font-weight: bold;
+}
+
+.rooms-double-reserve{
+    text-align: center;
+    font-size: 1.625rem;
+}
+
+.rooms-double-reserve-container{
+    background-color: #AE8F82;
+    display: inline-block;
+    padding: 1% 0;
+    text-align: center;
+    width: 20%;
+    color: white;
+}
+
+.rooms-double-reserve-container:hover{
+    background-color: black;
+}
+
+/* Luxurious Suite Content */
+
+.rooms-luxurious-container{
+    padding: 2% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+}
+
+.rooms-luxurious-img{
+    width: 920px;
+    height: 586px;
+    background-image: url(images/Rooms_LuxuriousSuite.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.rooms-luxurious-content{
+    padding: 5% 0;
+    padding-left: 2%;
+    max-width: 40%;
+    max-height: 10%;
+    display: block;
+}
+
+.rooms-luxurious-header{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.rooms-luxurious-floor{
+    font-size: 1.25rem;
+    padding-bottom: 1%;
+}
+
+.rooms-luxurious-desc{
+    font-size: 1.5625rem;
+    color: #757575;
+}
+
+.rooms-luxurious-price{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-size: 1.5625rem;
+    font-weight: bold;
+}
+
+.rooms-luxurious-reserve{
+    text-align: center;
+    font-size: 1.625rem;
+}
+
+.rooms-luxurious-reserve-container{
+    background-color: #AE8F82;
+    display: inline-block;
+    padding: 1% 0;
+    text-align: center;
+    width: 20%;
+    color: white;
+}
+
+.rooms-luxurious-reserve-container:hover{
+    background-color: black;
+}
+
+/* FOOTER */
+
+.Instagram{
+    width: 78px;
+    height: 78px;
+    background-image: url(images/Footer_Instagram.png);
+    background-size: cover;
+    background-position: center;
+    min-width: 78px;
+    min-height: 78px;
+}
+
+.Facebook{
+    width: 78px;
+    height: 78px;
+    background-image: url(images/Footer_Facebook.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 0.25rem;
+    min-width: 78px;
+    min-height: 78px;
+}
+
+.Twitter{
+    width: 90px;
+    height: 78px;
+    background-image: url(images/Footer_Twitter.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 0.25rem;
+    min-width: 90px;
+    min-height: 78px;
+}
+
+.container{
+    max-width: 1440px;
+    margin:auto;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.footer-col ul{
+    list-style: none;
+    line-height: 170%;
+}
+
+.footer-col h4{
+    list-style: none;
+    line-height: 150%;
+    font-weight: bold;
+    font-size: 1.35rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.footer{
+    background-color: #AE8F82;
+    padding-top: 3%;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+}
+
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#social-col{
+    margin-left: 40%;
+}
+
+.footer-col{
+    width: 30%;
+}
+
+.footer-copyright{
+    margin-top: 1%;
+}
+
+.footer-copyright::before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    margin-bottom: 1%;
+}
